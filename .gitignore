@@ -3,27 +3,19 @@ out/
 !**/src/main/**/out/
 !**/src/test/**/out/
 
-### Eclipse ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-bin/
-!**/src/main/**/bin/
-!**/src/test/**/bin/
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
+# Исключить из игнорирования папку src/Tasks/
+!src/
+!src/Tasks/
 
-### VS Code ###
-.vscode/
+# Игнорировать все файлы и папки в src/Tasks, кроме самих файлов .java
+src/Tasks/*
+!src/Tasks/*.java
 
-### Mac OS ###
+# Игнорировать IDE и конфигурационные файлы
+.idea/
+*.iml
+
+# Игнорировать системные файлы и файлы ОС
 .DS_Store
+Thumbs.db
