@@ -5,19 +5,17 @@ package Tasks;
 
 import java.util.Scanner;
 
-public class SummaChisel {
+public class SumChisel {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Введите первое число: ");
-        double chisloOdin = scanner.nextDouble();
+        double fistNumber = scanner.nextDouble();
 
         System.out.print("Введите второе число: ");
-        double chisloDva = scanner.nextDouble();
+        double secondNumber = scanner.nextDouble();
 
-        double summa = chisloOdin + chisloDva;
-
-        System.out.println("Сумма чисел: " + summa);
+        System.out.println("Сумма чисел: " + fistNumber + secondNumber);
 
         scanner.close();
     }

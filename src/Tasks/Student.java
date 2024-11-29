@@ -6,10 +6,10 @@ package Tasks;
 
 public class Student {
     private String name;
-    private int age;
+    private byte age;
     private double averageGrade;
 
-    public Student(String name, int age, double averageGrade) {
+    public Student(String name, byte age, double averageGrade) {
         this.name = name;
         this.age = age;
         this.averageGrade = averageGrade;
@@ -19,7 +19,7 @@ public class Student {
         this.name = name;
     }
 
-    public void setAge(int age) {
+    public void setAge(byte age) {
         if (age > 0) {
             this.age = age;
         } else {
@@ -55,12 +55,12 @@ public class Student {
     }
 
     public static void main(String[] args) {
-        Student student = new Student("Иван Иванов", 20, 8.5);
+        Student student = new Student("Иван Иванов", (byte) 20, 8.5);
 
         student.displayInfo();
 
         student.setName("Мария Смирнова");
-        student.setAge(22);
+        student.setAge((byte) 22);
         student.setAverageGrade(9.2);
 
         student.displayInfo();
