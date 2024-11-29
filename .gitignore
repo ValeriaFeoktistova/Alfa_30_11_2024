@@ -1,17 +1,15 @@
-# IntelliJ IDEA
+# Игнорировать скомпилированные файлы
 out/
-!**/src/main/**/out/
-!**/src/test/**/out/
 
 # Исключить из игнорирования папку src/Tasks/
 !src/
 !src/Tasks/
 
 # Игнорировать все файлы и папки в src/Tasks, кроме самих файлов .java
-src/Tasks/*
-!src/Tasks/*.java
+src/Tasks/**
+!src/Tasks/**/*.java
 
-# Игнорировать IDE и конфигурационные файлы
+# Игнорировать конфигурационные файлы IntelliJ IDEA
 .idea/
 *.iml
 
