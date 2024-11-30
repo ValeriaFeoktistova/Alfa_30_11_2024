@@ -39,7 +39,7 @@ public class Student {
         return name;
     }
 
-    public int getAge() {
+    public byte getAge() {
         return age;
     }
 
@@ -48,10 +48,16 @@ public class Student {
     }
 
     public void displayInfo() {
-        System.out.println("Информация о студенте:");
-        System.out.println("Имя: " + name);
-        System.out.println("Возраст: " + age);
-        System.out.println("Средний балл: " + averageGrade);
+        System.out.println(this.toString());
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", averageGrade=" + averageGrade +
+                '}';
     }
 
     public static void main(String[] args) {
@@ -66,3 +72,5 @@ public class Student {
         student.displayInfo();
     }
 }
+
+

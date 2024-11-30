@@ -7,7 +7,7 @@ package Tasks;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ListIterator {
+public class Task_4 {
     public static void main(String[] args) {
         List<String> words = new ArrayList<>();
         words.add("apple");
@@ -19,11 +19,10 @@ public class ListIterator {
 
         char ch = 'a';
 
-        for (String word : words) {
-            if (word.toLowerCase().charAt(0) == Character.toLowerCase(ch)) {
-                System.out.println(word);
-            }
-        }
+        words.stream()
+                .filter(word -> word.toLowerCase().charAt(0) == Character.toLowerCase(ch))
+                .forEach(System.out::println);
     }
 }
+
 

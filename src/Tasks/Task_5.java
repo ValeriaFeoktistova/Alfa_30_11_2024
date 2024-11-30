@@ -4,22 +4,19 @@
 
 package Tasks;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class IntegerHandler {
+public class Task_5 {
     public static void main(String[] args) {
-        // Используем Try-With-Resources для автоматического закрытия ресурса Scanner
         try (Scanner scanner = new Scanner(System.in)) {
-
             System.out.print("Введите целое число: ");
-
-            try {
-                int number = scanner.nextInt();
-                System.out.println("Вы ввели число: " + number);
-            } catch (Exception e) {
-                System.out.println("Ошибка: введено не целое число. Пожалуйста, введите целое число.");
-            }
+            int number = scanner.nextInt();
+            System.out.println("Вы ввели число: " + number);
+        } catch (InputMismatchException e) {
+            System.out.println("Ошибка: введено не целое число. Пожалуйста, введите целое число.");
         }
     }
 }
+
 
